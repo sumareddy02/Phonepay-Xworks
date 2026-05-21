@@ -10,12 +10,11 @@ import org.springframework.stereotype.Component;
 @Data
 @Component
 public class PhonepayDTO {
-
+    private int id;
     private String fname;
     private String lname;
     private String mobileNumber;
     private String emailID;
     private String Password;
-
 
 }

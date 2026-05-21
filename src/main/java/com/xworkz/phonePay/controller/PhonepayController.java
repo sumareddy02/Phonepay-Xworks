@@ -27,7 +27,7 @@ public class PhonepayController {
         System.out.println("invoking register user" + userDto);
 
         String serviceDTO=service.savePhonepayRegisterDTO(userDto);
-        System.out.println("service dto saved");
+        System.out.println("service dto saved  "+serviceDTO);
 
     /*   // Access DTO values
         String fname = userDto.getFname();
