@@ -8,6 +8,10 @@ import javax.persistence.*;
 @Entity
 @Table(name="Registration")
 
+@NamedQuery(
+        name = "findAllUsers",
+        query = "SELECT r FROM PhonepayEntity r"
+)
 public class PhonepayEntity {
 
     @Id
@@ -20,7 +24,7 @@ public class PhonepayEntity {
     private String lname;
     @Column(name = "MobileNumber")
     private String mobileNumber;
-    @Column(name="EmailID")
+    @Column(name="emailID")
     private String emailID;
     @Column(name="Password")
     private String Password;
